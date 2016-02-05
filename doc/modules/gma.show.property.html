@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/gma.gui.html">gma.gui</a></li>
+  <li><a href="../modules/gma.gui.progress.html">gma.gui.progress</a></li>
+  <li><a href="../modules/gma..html">gma.</a></li>
+  <li><a href="../modules/gma.network.html">gma.network</a></li>
+  <li><a href="../modules/gma.show.getobj.html">gma.show.getobj</a></li>
+  <li><a href="../modules/gma.show.html">gma.show</a></li>
+  <li><strong>gma.show.property</strong></li>
+  <li><a href="../modules/gma.timestamp.html">gma.timestamp</a></li>
+  <li><a href="../modules/gma.user.html">gma.user</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>gma.show.property</code></h1>
+<p>GMA LUA functions to get and adjust object properties</p>
+<p></p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#gma.show.property.amount">gma.show.property.amount (handle)</a></td>
+	<td class="summary">Returns the number of properties associated with this handle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.show.property.name">gma.show.property.name (handle, index)</a></td>
+	<td class="summary">Returns the name of the object property at a given index (by ID) for said handle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.show.property.get">gma.show.property.get (handle, index)</a></td>
+	<td class="summary">Returns the object property at a given index (by ID) for said handle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.show.property.get">gma.show.property.get (handle, property_name)</a></td>
+	<td class="summary">Returns the object property at a given index (by name) for said handle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.show.property.set">gma.show.property.set (handle, index, value)</a></td>
+	<td class="summary">Sets an object property at a given index (by ID) for said handle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.show.property.set">gma.show.property.set (handle, property_name, value)</a></td>
+	<td class="summary">Sets an object property at a given index (by name) for said handle</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "gma.show.property.amount"></a>
+    <strong>gma.show.property.amount (handle)</strong>
+    </dt>
+    <dd>
+    Returns the number of properties associated with this handle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">handle</span>
+            <span class="types"><span class="type">number</span></span>
+         Handle as given by <a href="../modules/gma.show.getobj.html#gma.show.getobj.handle">gma.show.getobj.handle</a>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Number of properties attached to handle object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.show.property.name"></a>
+    <strong>gma.show.property.name (handle, index)</strong>
+    </dt>
+    <dd>
+    Returns the name of the object property at a given index (by ID) for said handle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">handle</span>
+            <span class="types"><span class="type">number</span></span>
+         <a href="../modules/gma.show.getobj.html#gma.show.getobj.handle">gma.show.getobj.handle</a>
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">number</span></span>
+         Property index by ID
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        The object property name.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.show.property.get"></a>
+    <strong>gma.show.property.get (handle, index)</strong>
+    </dt>
+    <dd>
+    Returns the object property at a given index (by ID) for said handle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">handle</span>
+            <span class="types"><span class="type">number</span></span>
+         <a href="../modules/gma.show.getobj.html#gma.show.getobj.handle">gma.show.getobj.handle</a>
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">number</span></span>
+         Property index by ID
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        The object property.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.show.property.get"></a>
+    <strong>gma.show.property.get (handle, property_name)</strong>
+    </dt>
+    <dd>
+    Returns the object property at a given index (by name) for said handle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">handle</span>
+            <span class="types"><span class="type">number</span></span>
+         <a href="../modules/gma.show.getobj.html#gma.show.getobj.handle">gma.show.getobj.handle</a>
+        </li>
+        <li><span class="parameter">property_name</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         ???
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        The object property.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.show.property.set"></a>
+    <strong>gma.show.property.set (handle, index, value)</strong>
+    </dt>
+    <dd>
+    Sets an object property at a given index (by ID) for said handle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">handle</span>
+            <span class="types"><span class="type">number</span></span>
+         <a href="../modules/gma.show.getobj.html#gma.show.getobj.handle">gma.show.getobj.handle</a>
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">number</span></span>
+         ???
+        </li>
+        <li><span class="parameter">value</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         ???
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        success ???
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.show.property.set"></a>
+    <strong>gma.show.property.set (handle, property_name, value)</strong>
+    </dt>
+    <dd>
+    Sets an object property at a given index (by name) for said handle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">handle</span>
+            <span class="types"><span class="type">number</span></span>
+         <a href="../modules/gma.show.getobj.html#gma.show.getobj.handle">gma.show.getobj.handle</a>
+        </li>
+        <li><span class="parameter">property_name</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         ???
+        </li>
+        <li><span class="parameter">value</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         ???
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        success ???
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+<i style="float:right;">Last updated 2016-02-04 22:40:55 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

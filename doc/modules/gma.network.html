@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/gma.gui.html">gma.gui</a></li>
+  <li><a href="../modules/gma.gui.progress.html">gma.gui.progress</a></li>
+  <li><a href="../modules/gma..html">gma.</a></li>
+  <li><strong>gma.network</strong></li>
+  <li><a href="../modules/gma.show.getobj.html">gma.show.getobj</a></li>
+  <li><a href="../modules/gma.show.html">gma.show</a></li>
+  <li><a href="../modules/gma.show.property.html">gma.show.property</a></li>
+  <li><a href="../modules/gma.timestamp.html">gma.timestamp</a></li>
+  <li><a href="../modules/gma.user.html">gma.user</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>gma.network</code></h1>
+<p>Network related GMA LUA functions</p>
+<p></p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.gethosttype">gma.network.gethosttype ()</a></td>
+	<td class="summary">Get the MA-NET type of device.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.gethostsubtype">gma.network.gethostsubtype ()</a></td>
+	<td class="summary">Get the MA-NET sub-type of device.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getprimaryip">gma.network.getprimaryip ()</a></td>
+	<td class="summary">Returns the primary/MA-NET IP address of the console.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getsecondaryip">gma.network.getsecondaryip ()</a></td>
+	<td class="summary">Returns the secondary/ARTNET IP address of the console.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getstatus">gma.network.getstatus ()</a></td>
+	<td class="summary">Returns the MA-NET session status</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getsessionnumber">gma.network.getsessionnumber ()</a></td>
+	<td class="summary">Returns the MA-NET session number.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getsessionname">gma.network.getsessionname ()</a></td>
+	<td class="summary">Returns the MA_NET session name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getslot">gma.network.getslot ()</a></td>
+	<td class="summary">Something to do with MA-NET, but what?</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.gethostdata">gma.network.gethostdata (ip, recycle)</a></td>
+	<td class="summary"></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getmanetslot">gma.network.getmanetslot (slot, recycle)</a></td>
+	<td class="summary"></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.network.getperformance">gma.network.getperformance (slot, recycle)</a></td>
+	<td class="summary"></td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "gma.network.gethosttype"></a>
+    <strong>gma.network.gethosttype ()</strong>
+    </dt>
+    <dd>
+    Get the MA-NET type of device.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Type of device
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+  gma.network.gethosttype();
+  <span class="string">"Console"</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "gma.network.gethostsubtype"></a>
+    <strong>gma.network.gethostsubtype ()</strong>
+    </dt>
+    <dd>
+    Get the MA-NET sub-type of device.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Subtype of device
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+  gma.network.gethosttype();
+  <span class="string">"onPC"</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "gma.network.getprimaryip"></a>
+    <strong>gma.network.getprimaryip ()</strong>
+    </dt>
+    <dd>
+    Returns the primary/MA-NET IP address of the console.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Primary/MA-NET IP
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+  gma.network.getprimaryip();
+  <span class="string">"192.168.0.1"</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "gma.network.getsecondaryip"></a>
+    <strong>gma.network.getsecondaryip ()</strong>
+    </dt>
+    <dd>
+    Returns the secondary/ARTNET IP address of the console.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Secondary/ARTNET IP
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+  gma.network.getsecondaryip();
+  <span class="string">"10.0.0.1"</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "gma.network.getstatus"></a>
+    <strong>gma.network.getstatus ()</strong>
+    </dt>
+    <dd>
+    Returns the MA-NET session status
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        MA-NET Session Status
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+  gma.network.getstatus();
+  <span class="string">"Standalone"</span>, <span class="string">"Master"</span>, ...?</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "gma.network.getsessionnumber"></a>
+    <strong>gma.network.getsessionnumber ()</strong>
+    </dt>
+    <dd>
+    Returns the MA-NET session number.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        ME-NET session number.
+Returns 255 if not in a session.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+  gma.network.getsessionnumber();
+  <span class="string">"1"</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "gma.network.getsessionname"></a>
+    <strong>gma.network.getsessionname ()</strong>
+    </dt>
+    <dd>
+    Returns the MA_NET session name.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        MA-NET session name.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+  gma.network.getsessionname();
+  <span class="string">"newshow"</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "gma.network.getslot"></a>
+    <strong>gma.network.getslot ()</strong>
+    </dt>
+    <dd>
+    Something to do with MA-NET, but what?
+Returned 255 when I wasn't in a session, 30 when I was...
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        slot???</li>
+        <li>
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        host_data ???</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.network.gethostdata"></a>
+    <strong>gma.network.gethostdata (ip, recycle)</strong>
+    </dt>
+    <dd>
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">ip</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         IP Address
+        </li>
+        <li><span class="parameter">recycle</span>
+            <span class="types">optional <a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         ???
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        host_data ???</li>
+        <li>
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        slot_data???</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.network.getmanetslot"></a>
+    <strong>gma.network.getmanetslot (slot, recycle)</strong>
+    </dt>
+    <dd>
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">slot</span>
+            <span class="types"><span class="type">number</span></span>
+        ???
+        </li>
+        <li><span class="parameter">recycle</span>
+            <span class="types">optional <a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        ???
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        slot_data???</li>
+        <li>
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        performance_data???</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.network.getperformance"></a>
+    <strong>gma.network.getperformance (slot, recycle)</strong>
+    </dt>
+    <dd>
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">slot</span>
+            <span class="types"><span class="type">number</span></span>
+        ???
+        </li>
+        <li><span class="parameter">recycle</span>
+            <span class="types">optional <a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        ???
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        performance_data???
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+<i style="float:right;">Last updated 2016-02-04 22:40:55 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

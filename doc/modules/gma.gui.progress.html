@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/gma.gui.html">gma.gui</a></li>
+  <li><strong>gma.gui.progress</strong></li>
+  <li><a href="../modules/gma..html">gma.</a></li>
+  <li><a href="../modules/gma.network.html">gma.network</a></li>
+  <li><a href="../modules/gma.show.getobj.html">gma.show.getobj</a></li>
+  <li><a href="../modules/gma.show.html">gma.show</a></li>
+  <li><a href="../modules/gma.show.property.html">gma.show.property</a></li>
+  <li><a href="../modules/gma.timestamp.html">gma.timestamp</a></li>
+  <li><a href="../modules/gma.user.html">gma.user</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>gma.gui.progress</code></h1>
+<p>Progressbar related GMA LUA functions</p>
+<p></p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#gma.gui.progress.start">gma.gui.progress.start (progress_name)</a></td>
+	<td class="summary">Create a new progress bar.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.gui.progress.stop">gma.gui.progress.stop (progress_handle)</a></td>
+	<td class="summary">Close an existing progress bar.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.gui.progress.settext">gma.gui.progress.settext (progress_handle, text)</a></td>
+	<td class="summary">Set the sub-title of a progress bar.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.gui.progress.setrange">gma.gui.progress.setrange (progress_handle, from, to)</a></td>
+	<td class="summary">Set the min/max range of a progress bar.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gma.gui.progress.set">gma.gui.progress.set (progress_handle, value)</a></td>
+	<td class="summary">Sets the position/progress of the progress bar.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "gma.gui.progress.start"></a>
+    <strong>gma.gui.progress.start (progress_name)</strong>
+    </dt>
+    <dd>
+    Create a new progress bar.
+<p>Please note there is no way for the user to close an open progress bar, therefore <a href="../modules/gma.gui.progress.html#gma.gui.progress.stop">stop()</a> MUST be called!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">progress_name</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Main title of the progress bar.
+<p>Respects the \n, \f, \r escape sequences but treats them all identically.
+<p>Respects \t but renders very wierd.
+<p>Respects \\, \', \".
+<p>Does NOT respect \[, \]
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Unique handle to reference the progressbar by.
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/gma.gui.progress.html#gma.gui.progress.stop">gma.gui.progress.stop</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "gma.gui.progress.stop"></a>
+    <strong>gma.gui.progress.stop (progress_handle)</strong>
+    </dt>
+    <dd>
+    Close an existing progress bar.
+<p>Since there is no way for a user to close a progress bar, this MUST be called!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">progress_handle</span>
+            <span class="types"><span class="type">number</span></span>
+         Handle returned by <a href="../modules/gma.gui.progress.html#gma.gui.progress.start">start()</a>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.gui.progress.settext"></a>
+    <strong>gma.gui.progress.settext (progress_handle, text)</strong>
+    </dt>
+    <dd>
+    Set the sub-title of a progress bar.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">progress_handle</span>
+            <span class="types"><span class="type">number</span></span>
+         Handle returned by <a href="../modules/gma.gui.progress.html#gma.gui.progress.start">start()</a>.
+        </li>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         String to set as the sub-title for the progress bar.
+<p>Respects the \n, \f, \r escape sequences but treats them all identically.
+<p>Respects \t but renders very wierd.
+<p>Respects \\, \', \".
+<p>Does NOT respect \[, \]
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.gui.progress.setrange"></a>
+    <strong>gma.gui.progress.setrange (progress_handle, from, to)</strong>
+    </dt>
+    <dd>
+    Set the min/max range of a progress bar.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">progress_handle</span>
+            <span class="types"><span class="type">number</span></span>
+         Handle returned by <a href="../modules/gma.gui.progress.html#gma.gui.progress.start">start()</a>.
+        </li>
+        <li><span class="parameter">from</span>
+            <span class="types"><span class="type">number</span></span>
+         Minimum value of the progress bar range.
+        </li>
+        <li><span class="parameter">to</span>
+            <span class="types"><span class="type">number</span></span>
+         Maximum value of the progress bar range.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gma.gui.progress.set"></a>
+    <strong>gma.gui.progress.set (progress_handle, value)</strong>
+    </dt>
+    <dd>
+    Sets the position/progress of the progress bar.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">progress_handle</span>
+            <span class="types"><span class="type">number</span></span>
+         Handle returned by <a href="../modules/gma.gui.progress.html#gma.gui.progress.start">start()</a>.
+        </li>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">number</span></span>
+         Position to set progress bar to.
+<p>A value less than the <a href="../modules/gma.gui.progress.html#gma.gui.progress.setrange">minimum</a> value will appear to have no progress.
+A value greater than the <a href="../modules/gma.gui.progress.html#gma.gui.progress.setrange">maximum</a> value will appear beyond the end of the progress bar.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+<i style="float:right;">Last updated 2016-02-04 22:40:55 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
