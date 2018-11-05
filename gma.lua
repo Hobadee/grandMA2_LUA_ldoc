@@ -100,9 +100,9 @@ end
 function gma.gettime()
 end
 
----Prompts user for a string and returns it?
---@tparam string title Title of window?
---@tparam ?string old_text Default text to display pre-enter?
---@treturn string User-entered string?
+---Prompts user for a string and returns it
+--@tparam string title Title of window
+--@tparam string old_text (Optional) Placeholder text to display pre-enter
+--@treturn string User-entered string
 function gma.textinput(title,old_text)
 end
