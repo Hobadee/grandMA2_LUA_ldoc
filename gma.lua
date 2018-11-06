@@ -28,7 +28,7 @@ end
 
 ---Returns the build date of the current GMA software.
 --
---@treturn string Assuming Build Date of GMA2 software?
+--@treturn string Build Date of GMA2 software
 --@usage
 --  gma.build_date();
 --  "Aug 25 2015"
@@ -37,7 +37,7 @@ end
 
 ---Return the build time of the current GMA software.
 --
---@treturn string Assuming Build Time of GMA2 software?
+--@treturn string Build Time of GMA2 software
 --@usage
 --  gma.build_time();
 --  "18:18:44"
