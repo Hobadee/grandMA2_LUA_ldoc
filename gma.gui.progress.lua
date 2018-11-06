@@ -27,12 +27,13 @@ function gma.gui.progress.stop(progress_handle)
 end
 
 ---Set the sub-title of a progress bar.
+--
 --@tparam number progress_handle Handle returned by @{gma.gui.progress.start|start()}.
 --@tparam string text String to set as the sub-title for the progress bar.
 --
 --Respects the \n, \f, \r escape sequences but treats them all identically.
 --
---Respects \t but renders very wierd.
+--Respects \t but renders very weird.
 --
 --Respects \\, \', \".
 --
@@ -41,6 +42,7 @@ function gma.gui.progress.settext(progress_handle,text)
 end
 
 ---Set the min/max range of a progress bar.
+--
 --@tparam number progress_handle Handle returned by @{gma.gui.progress.start|start()}.
 --@tparam number from Minimum value of the progress bar range.
 --@tparam number to Maximum value of the progress bar range.
@@ -48,6 +50,7 @@ function gma.gui.progress.setrange(progress_handle,from,to)
 end
 
 ---Sets the position/progress of the progress bar.
+--
 --@tparam number progress_handle Handle returned by @{gma.gui.progress.start|start()}.
 --@tparam number value Position to set progress bar to.
 --
