@@ -5,17 +5,6 @@
 ---Sleeps the LUA script for number of seconds
 --
 --@tparam number sleep_seconds Number of seconds to sleep for.
---@usage gma_sleep(5);
---@usage gma_sleep(0.1);
-function gma_sleep(sleep_seconds)
-end
-
-
----Sleeps the LUA script for number of seconds
---
---Functionally identical to gma_sleep???
---
---@tparam number sleep_seconds Number of seconds to sleep for.
 --@usage gma.sleep(5);
 --@usage gma.sleep(0.1);
 function gma.sleep(sleep_seconds)
