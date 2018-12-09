@@ -12,6 +12,12 @@
 --
 -- Codes discovered so far:
 --
+--   3: Ch Pg +
+--   4: Ch Pg -
+--   5: Fd Pg +
+--   6: Fd Pg -
+--   7: Bt Pg +
+--   8: Bt Pg -
 --   9: Macro: DefGoPause
 --  10: Macro: DefGoBack
 --  11: Macro: DefGoForward
@@ -35,6 +41,9 @@
 --  29: TA_X17 pressed=1   VIewButton 11.18
 --  30: TA_X18 pressed=1   VIewButton 11.19
 --  31: TA_X19 pressed=1   ViewButton 11.20
+--  32: List
+--  33: User 1
+--  34: User 2
 --  40: ⦿ ("Nipple")
 --  41: Fix
 --  42: Select
@@ -48,6 +57,7 @@
 --  50: Go-
 --  51: Pause
 --  52: Go
+--  53: Oops
 --  54: Esc
 --  55: Edit
 --  56: Goto
@@ -93,7 +103,13 @@
 -- 102: Thru
 -- 103: If
 -- 104: At
+-- 105: Clear
 -- 106: Please
+-- 107: Up
+-- 108: Set
+-- 109: Prev
+-- 110: Next
+-- 111: Down
 -- 116: Help
 -- 117: Backup
 -- 118: Setup
