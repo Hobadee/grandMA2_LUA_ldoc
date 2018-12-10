@@ -12,29 +12,38 @@
 --
 -- Codes discovered so far:
 --
+--   3: Ch Pg +
+--   4: Ch Pg -
+--   5: Fd Pg +
+--   6: Fd Pg -
+--   7: Bt Pg +
+--   8: Bt Pg -
 --   9: Macro: DefGoPause
 --  10: Macro: DefGoBack
 --  11: Macro: DefGoForward
---  12: TA_X0  pressed=1   ViewButton 11.1
---  13: TA_X1  pressed=1   ViewButton 11.2
---  14: TA_X2  pressed=1   ViewButton 11.3
---  15: TA_X3  pressed=1   ViewButton 11.4
---  16: TA_X4  pressed=1   ViewButton 11.5
---  17: TA_X5  pressed=1   ViewButton 11.6
---  18: TA_X6  pressed=1   ViewButton 11.7
---  19: TA_X7  pressed=1   ViewButton 11.8
---  20: TA_X8  pressed=1   ViewButton 11.9
---  21: TA_X9  pressed=1   VIewButton 11.10
---  22: TA_X10 pressed=1   VIewButton 11.11
---  23: TA_X11 pressed=1   VIewButton 11.12
---  24: TA_X12 pressed=1   VIewButton 11.13
---  25: TA_X13 pressed=1   VIewButton 11.14
---  26: TA_X14 pressed=1   VIewButton 11.15
---  27: TA_X15 pressed=1   VIewButton 11.16
---  28: TA_X16 pressed=1   VIewButton 11.17
---  29: TA_X17 pressed=1   VIewButton 11.18
---  30: TA_X18 pressed=1   VIewButton 11.19
---  31: TA_X19 pressed=1   ViewButton 11.20
+--  12: X1
+--  13: X2
+--  14: X3
+--  15: X4
+--  16: X5
+--  17: X6
+--  18: X7
+--  19: X8
+--  20: X9
+--  21: X10
+--  22: X11
+--  23: X12
+--  24: X13
+--  25: X14
+--  26: X15
+--  27: X16
+--  28: X17
+--  29: X18
+--  30: X19
+--  31: X20
+--  32: List
+--  33: User 1
+--  34: User 2
 --  40: ⦿ ("Nipple")
 --  41: Fix
 --  42: Select
@@ -48,6 +57,7 @@
 --  50: Go-
 --  51: Pause
 --  52: Go
+--  53: Oops
 --  54: Esc
 --  55: Edit
 --  56: Goto
@@ -93,7 +103,13 @@
 -- 102: Thru
 -- 103: If
 -- 104: At
+-- 105: Clear
 -- 106: Please
+-- 107: Up
+-- 108: Set
+-- 109: Prev
+-- 110: Next
+-- 111: Down
 -- 116: Help
 -- 117: Backup
 -- 118: Setup
