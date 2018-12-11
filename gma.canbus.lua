@@ -18,9 +18,9 @@
 --   6: Fd Pg -
 --   7: Bt Pg +
 --   8: Bt Pg -
---   9: Macro: DefGoPause
---  10: Macro: DefGoBack
---  11: Macro: DefGoForward
+--   9: Pause [large]
+--  10: Go - [large]
+--  11: Go + [large]
 --  12: X1
 --  13: X2
 --  14: X3
@@ -54,9 +54,9 @@
 --  47: <<<
 --  48: Learn
 --  49: >>>
---  50: Go-
---  51: Pause
---  52: Go
+--  50: Go - [small]
+--  51: Pause [small]
+--  52: Go + [small]
 --  53: Oops
 --  54: Esc
 --  55: Edit
@@ -65,40 +65,40 @@
 --  58: Time
 --  59: Store
 --  61: Freeze
---  62: Preview
+--  62: Prvw [Preview]
 --  63: Assign
 --  64: Align
---  65: B.O. (Blackout)
+--  65: B.O. [Blackout]
 --  66: View
 --  67: Effect
 --  68: MA
---  69: Delete
+--  69: Del [Delete]
 --  70: Page
 --  71: Macro
 --  72: Preset
 --  73: Copy
---  74: Sequence
+--  74: Sequ [Sequence]
 --  75: Cue
---  76: Executor
+--  76: Exec [Executor]
 --  82: Channel
 --  83: Fixture
 --  84: Group
 --  85: Move
---  86: 0
---  87: 1
---  88: 2
---  89: 3
---  90: 4
---  91: 5
---  92: 6
---  93: 7
---  94: 8
---  95: 9
---  96: +
---  97: -
---  98: .
+--  86: 0 [Numeric]
+--  87: 1 [Numeric]
+--  88: 2 [Numeric]
+--  89: 3 [Numeric]
+--  90: 4 [Numeric]
+--  91: 5 [Numeric]
+--  92: 6 [Numeric]
+--  93: 7 [Numeric]
+--  94: 8 [Numeric]
+--  95: 9 [Numeric]
+--  96: + [Plus]
+--  97: - [Minus]
+--  98: . [Dot]
 --  99: Full
--- 100: Highlight
+-- 100: Highlt [Highlight]
 -- 101: Solo
 -- 102: Thru
 -- 103: If
@@ -107,23 +107,23 @@
 -- 106: Please
 -- 107: Up
 -- 108: Set
--- 109: Prev
+-- 109: Prev [Previous]
 -- 110: Next
 -- 111: Down
 -- 116: Help
 -- 117: Backup
 -- 118: Setup
 -- 119: Tools
--- 120: ViewButton 1.1 /screen=2
--- 121: ViewButton 1.2 /screen=2
--- 122: ViewButton 1.3 /screen=2
--- 123: ViewButton 1.4 /screen=2
--- 124: ViewButton 1.5 /screen=2
--- 125: ViewButton 1.6 /screen=2
--- 126: ViewButton 1.7 /screen=2
--- 127: ViewButton 1.8 /screen=2
--- 128: ViewButton 1.9 /screen=2
--- 129: ViewButton 1.10 /screen=2
+-- 120: V1
+-- 121: V2
+-- 122: V3
+-- 123: V4
+-- 124: V5
+-- 125: V6
+-- 126: V7
+-- 127: V8
+-- 128: V9
+-- 129: V10
 -- 155 and higher: Macro DefGoPause
 function gma.canbus.hardkey(code, pressed, hold)
 end
