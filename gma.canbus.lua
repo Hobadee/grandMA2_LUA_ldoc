@@ -44,6 +44,10 @@
 --  32: List
 --  33: User 1
 --  34: User 2
+--  36: U1
+--  37: U2
+--  38: U3
+--  39: U4
 --  40: ⦿ ("Nipple")
 --  41: Fix
 --  42: Select
@@ -124,6 +128,6 @@
 -- 127: V8
 -- 128: V9
 -- 129: V10
--- 155 and higher: Macro DefGoPause
+-- 155 and higher: Pause [large]
 function gma.canbus.hardkey(code, pressed, hold)
 end
