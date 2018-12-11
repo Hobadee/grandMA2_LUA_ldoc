@@ -68,6 +68,7 @@
 --  57: Update
 --  58: Time
 --  59: Store
+--  60: Blind
 --  61: Freeze
 --  62: Prvw [Preview]
 --  63: Assign
