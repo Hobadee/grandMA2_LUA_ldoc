@@ -1,6 +1,7 @@
 ---GUI-related GMA LUA functions
 --@module gma.gui
 
+---Get user confirmation
 --
 --WARNING!!!  Calling this function on version 3.1.2.5 may hang your console!
 --
