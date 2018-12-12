@@ -1,6 +1,6 @@
 ---Canbus related GMA LUA functions
 --@module gma.canbus
-
+--
 --WARNING!! This is a low-level function and might have unpredictable and harmful consequences on your console and/or showfile.
 -- Use it at your own risk.
 --
