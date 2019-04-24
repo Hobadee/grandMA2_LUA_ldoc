@@ -144,6 +144,6 @@
 --@tparam number code numeric code corresponding to a key (106 = Please, 54 = Esc)
 --@tparam boolean pressed
 --@tparam boolean hold
---@treturn boolean success
+--@treturn boolean success returns true except when a wrong parameter count is given
 function gma.canbus.hardkey(code, pressed, hold)
 end
