@@ -108,3 +108,9 @@ end
 --@treturn string User-entered string
 function gma.textinput(title,old_text)
 end
+
+---Returns the host hardware type
+--
+--@treturn string 'GMA2' or 'GMA3' depending on the host hardware
+function gma.gethardwaretype()
+end
