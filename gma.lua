@@ -61,6 +61,7 @@ function gma.export(filename,export_data)
 end
 
 ---Export a table as a CSV file?
+--
 --@tparam string filename Filename to export to???
 --@tparam table export_data Table object to export???
 function gma.export_csv(filename,export_data)
@@ -107,4 +108,10 @@ end
 --@tparam string old_text (Optional) Placeholder text to display pre-enter
 --@treturn string User-entered string
 function gma.textinput(title,old_text)
+end
+
+---Returns the host hardware type
+--
+--@treturn string 'GMA2' or 'GMA3' depending on the host hardware
+function gma.gethardwaretype()
 end
