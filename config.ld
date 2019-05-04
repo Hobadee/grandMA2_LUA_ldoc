@@ -11,3 +11,8 @@ This reference is community provided and there is no garuantee of accuracy.
 file = {
      './'
 }
+
+-- Custom @see handler to handle [Text](URL) style links
+custom_see_handler('%[(.*)%]%((.*)%)',function(name,uri)
+    return name, uri
+end)
