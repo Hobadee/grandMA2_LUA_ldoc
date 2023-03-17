@@ -23,7 +23,7 @@ end
 ---Get the class of the object.
 --
 --@tparam number handle @{gma.show.getobj.handle|Handle} to get the class of.
---@treturn string Object's class name.
+--@treturn string Object's class name. Examoples are (types of objects followed by internal class name): Sequence: CMD_SEQUENCE, Group: CMD_GROUP, ...
 function gma.show.getobj.class(handle)
 end
 
@@ -44,7 +44,7 @@ end
 ---Get name of object.
 --
 --@tparam number handle @{gma.show.getobj.handle|Handle} to get name of.
---@treturn string Object name.
+--@treturn string Object name as displayed inside MA GUI
 function gma.show.getobj.name(handle)
 end
 
@@ -54,7 +54,7 @@ end
 --
 --@tparam number handle @{gma.show.getobj.handle|Handle} to get label of.
 --@treturn ?string Object label.
---Returns nil if no label is set.
+--Returns nil if no label is set. Returns the same output as @{gma.show.getobj.name|Name} is the user did set a label for the object.
 function gma.show.getobj.label(handle)
 end
 

@@ -74,27 +74,41 @@ function gma.network.getslot()
 end
 
 
----
+---Retrieves information about a host using the hosts IP address.
+-- Retrieved informations are: Host status (see @{gma.network.getstatus()}), Primary ip address (see @{gma.network.getprimaryip()}), 
+-- Secondary ip address (see @{gma.network.getsecondaryip()}), bits (64/32), hostname, host network slot, subnet mask, whether invite is enaled, MAC address, 
+-- primary and secondary subnet mask, Software version, software uptime, Software type (see @{gma.network.gethosttype()}) and subtype (see @{gma.network.gethostsubtype()}), and finally, the session number of the host.
 --
---@tparam string ip IP Address
+--@tparam string ip IP Address of the host we want to get data from
 --@tparam ?table recycle ???
---@treturn table host_data ???
+--@treturn table host_data Table in which host data should be copied into.
 function gma.network.gethostdata(ip,recycle)
 end
 
----
+---Retrieves information about a host using the hosts slotID in MA_NET.
+-- 
+-- Retrieved informations are: Host status (see @{gma.network.getstatus()}), Primary ip address (see @{gma.network.getprimaryip()}), used paramters count, MA_NET slot ID,
+-- DMX Count (?)
+-- Secondary ip address (see @{gma.network.getsecondaryip()}), bits (64/32), hostname, host network slot, subnet mask, whether invite is enaled, MAC address, 
+-- primary and secondary subnet mask, Software version, software uptime, Software type (see @{gma.network.gethosttype()}) and subtype (see @{gma.network.gethostsubtype()}), and finally, the session number of the host.
 --
---@tparam number slot???
+--@tparam number the MA_SLOT slot number for which we want to get information.
 --@tparam ?table recycle???
---@treturn table slot_data???
+--@treturn table a Table in which host data should be copied into.
 function gma.network.getmanetslot(slot,recycle)
 end
 
----
+---Returns performance statistics about a host using its MA_NET slot ID.
 --
---@tparam number slot???
+-- Collects the following performance data (values are in seconds?):
+-- RT_DecodeDMX,RT_DMXOutput,WaitForKeys,RT_HardwareEve,Wait25,RT_Jobques,RT_Effects,RT_Submaster,RT_LocalChanne,RT_BMP,RT_NormalChann,
+-- RT_PreviewChan,RT_Universes,RT_DMXEncode,RT_ChannelInfo,RT_FadersAndLe
+--
+-- Based of the permormance statistics names, the maximum length of a stat name is 14 characters.
+--
+--@tparam number the MA_SLOT slot number for which we want to get information.
 --@tparam ?table recycle???
---@treturn table performance_data???
+--@treturn table performance_data Table in which performance data should be saved.
 function gma.network.getperformance(slot,recycle)
 end
 

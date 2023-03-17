@@ -2,14 +2,18 @@
 --@module gma.show
 
 
----Gets the value of a DMX address?
+---Gets the value of a DMX address.
 --
---@tparam number dmx_addr DMX address
+-- Will only output the value if MA has free parameters??
+--
+--@tparam number dmx_addr DMX address. Usage: <UNIVERSE>.<ADDRESS>
 --@treturn number Value of DMX address
 function gma.show.getdmx(dmx_addr)
 end
 
----Gets the value of many DMX addresses???
+---Gets the value of multiple DMX addresses.
+--
+--Will only output the value if MA has free parameters??
 --
 --@tparam table recycle ???
 --@tparam number dmx_addr ???

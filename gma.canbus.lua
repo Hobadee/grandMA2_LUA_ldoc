@@ -22,10 +22,14 @@ end
 -- WARNING!! This is a low-level function and might have unpredictable and harmful consequences on your console and/or showfile.
 -- Use it at your own risk.
 --
+-- 
+--
 --@tparam number encoder_number number to indicate the hardware encoder number. 0 is for encoder 1, 1 for encoder 2 and so on. I assume you can use 4 to emulate the screen encoder
---@tparam number steps use negative numbers to invert direction
---@tparam boolean pressed currently not really sure
+--@tparam number steps use negative numbers to invert direction. Set to nil if you want to emaulte encoder press.
+--@tparam boolean pressed set to true/false to emulate key press/release. Needs to be nil if want to emulate rotation (uisng encoder_number and steps)!
 --@treturn boolean success returns true except when a wrong parameter count is given
+--@usage gma.echo(0,-10,nil)
+--@usage gma.echo(0,nil,true)
 function gma.canbus.encoder(encoder_number, steps, pressed)
 end
 
