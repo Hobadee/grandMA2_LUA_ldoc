@@ -6,7 +6,7 @@
 --
 -- May only output the value if MA has free parameters.
 --
---@tparam number dmx_addr DMX address. Format as <UNIVERSE>.<ADDRESS>
+--@tparam number dmx_addr DMX address. Format as `<UNIVERSE>.<ADDRESS>`
 --@treturn number Value of DMX address
 --@usage gma.show.getdmx(1.1)
 --@usage gma.show.getdmx(3.54)
