@@ -22,8 +22,9 @@ end
 
 ---Get the class of the object.
 --
---@tparam number handle @{gma.show.getobj.handle|Handle} to get the class of.
---@treturn string Object's class name.
+--@tparam number handle @{gma.show.getobj.handle|Handle} to get the class of.  (See linked Wiki for a list)
+--@treturn string Object's class name. 
+--@see [Object class names](https://github.com/Hobadee/grandMA2_LUA_ldoc/wiki/Object-Class-Names)
 function gma.show.getobj.class(handle)
 end
 
@@ -44,7 +45,7 @@ end
 ---Get name of object.
 --
 --@tparam number handle @{gma.show.getobj.handle|Handle} to get name of.
---@treturn string Object name.
+--@treturn string Object name as displayed inside the MA GUI
 function gma.show.getobj.name(handle)
 end
 
@@ -54,7 +55,7 @@ end
 --
 --@tparam number handle @{gma.show.getobj.handle|Handle} to get label of.
 --@treturn ?string Object label.
---Returns nil if no label is set.
+--Returns `nil` if no label is set. Returns the same output as @{gma.show.getobj.name|Name} if the user set a label for the object.
 function gma.show.getobj.label(handle)
 end
 

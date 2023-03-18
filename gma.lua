@@ -53,28 +53,28 @@ end
 function gma.git_version()
 end
 
----Export a table as a file???
+---Export a table as a file. By default, MA uses XML as a file type.  Check @{gma.export_csv|export_csv()} and @{gma.export_json|export_json()} for other options.
 --
---@tparam string filename Filename to export to???
---@tparam table export_data Table object to export???
+--@tparam string filename Filename to export to. onPC exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
+--@tparam table export_data Table object to export.
 function gma.export(filename,export_data)
 end
 
----Export a table as a CSV file?
+---Export a table as a CSV file
 --
---@tparam string filename Filename to export to???
---@tparam table export_data Table object to export???
+--@tparam string filename Filename to export to. onPC exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
+--@tparam table export_data Table object to export
 function gma.export_csv(filename,export_data)
 end
 
----Export a table as a JSON file?
+---Export a table as a JSON file
 --
---@tparam string filename Filename to export to???
---@tparam table export_data Table object to export???
+--@tparam string filename Filename to export to. onPC exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
+--@tparam table export_data Table object to export.
 function gma.export_json(filename,export_data)
 end
 
----Import a file as a table?
+---Import a file as a table. Can only import tables that are saved in XML Format?
 --
 --@tparam string filename Filename to import
 --@treturn table Imported data
@@ -96,9 +96,9 @@ end
 function gma.timer(name,dt,max_count,cleanup)
 end
 
----Returns the system time
+---Returns the system uptime
 --
---@treturn number Current LINUX time as returned by systemd???
+--@treturn number Current system uptime in seconds.
 function gma.gettime()
 end
 
