@@ -73,26 +73,51 @@ end
 function gma.network.getslot()
 end
 
-
 ---Retrieves information about a host using the hosts IP address.
--- Retrieved informations are: Host status (see @{gma.network.getstatus()}), Primary ip address (see @{gma.network.getprimaryip()}), 
--- Secondary ip address (see @{gma.network.getsecondaryip()}), bits (64/32), hostname, host network slot, subnet mask, whether invite is enaled, MAC address, 
--- primary and secondary subnet mask, Software version, software uptime, Software type (see @{gma.network.gethosttype()}) and subtype (see @{gma.network.gethostsubtype()}), and finally, the session number of the host.
+--
+-- Retrieved information:
+-- * Host status (see @{gma.network.getstatus()})
+-- * Primary ip address (see @{gma.network.getprimaryip()}), 
+-- * Secondary ip address (see @{gma.network.getsecondaryip()})
+-- * Bits (64/32), hostname
+-- * Host network slot
+-- * Subnet mask
+-- * Whether invite is enaled
+-- * MAC address
+-- * Primary and secondary subnet mask
+-- * Software version
+-- * Software uptime
+-- * Software type (see @{gma.network.gethosttype()}) and subtype (see @{gma.network.gethostsubtype()})
+-- * Session number of the host.
 --
 --@tparam string ip IP Address of the host we want to get data from
 --@tparam ?table recycle ???
---@treturn table host_data Table in which host data should be copied into.
+--@treturn table host_data Table of host data.
 function gma.network.gethostdata(ip,recycle)
 end
 
 ---Retrieves information about a host using the hosts slotID in MA_NET.
 -- 
--- Retrieved informations are: Host status (see @{gma.network.getstatus()}), Primary ip address (see @{gma.network.getprimaryip()}), used paramters count, MA_NET slot ID,
--- DMX Count (?)
--- Secondary ip address (see @{gma.network.getsecondaryip()}), bits (64/32), hostname, host network slot, subnet mask, whether invite is enaled, MAC address, 
--- primary and secondary subnet mask, Software version, software uptime, Software type (see @{gma.network.gethosttype()}) and subtype (see @{gma.network.gethostsubtype()}), and finally, the session number of the host.
+-- Retrieved information is:
+-- 
+-- * Host status (see @{gma.network.getstatus()})
+-- * Primary ip address (see @{gma.network.getprimaryip()})
+-- * Used paramters count, MA_NET slot ID,
+-- * DMX Count (?)
+-- * Secondary ip address (see @{gma.network.getsecondaryip()})
+-- * Bits (64/32)
+-- * Hostname
+-- * Host network slot
+-- * Subnet mask
+-- * Whether invite is enaled
+-- * MAC address
+-- * Primary and secondary subnet mask
+-- * Software version
+-- * Software uptime
+-- * Software type (see @{gma.network.gethosttype()}) and subtype (see @{gma.network.gethostsubtype()})
+-- * Session number of the host.
 --
---@tparam number the MA_SLOT slot number for which we want to get information.
+--@tparam number slot The MA_SLOT slot number for which we want to get information.
 --@tparam ?table recycle???
 --@treturn table a Table in which host data should be copied into.
 function gma.network.getmanetslot(slot,recycle)
@@ -106,9 +131,9 @@ end
 --
 -- Based of the permormance statistics names, the maximum length of a stat name is 14 characters.
 --
---@tparam number the MA_SLOT slot number for which we want to get information.
+--@tparam number slot The MA_SLOT slot number for which we want to get information.
 --@tparam ?table recycle???
---@treturn table performance_data Table in which performance data should be saved.
+--@treturn table Performance data table.
 function gma.network.getperformance(slot,recycle)
 end
 
