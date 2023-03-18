@@ -55,21 +55,21 @@ end
 
 ---Export a table as a file. By default, MA uses XML as a file type.  Check @{gma.export_csv|export_csv()} and @{gma.export_json|export_json()} for other options.
 --
---@tparam string filename Filename to export to. Exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
+--@tparam string filename Filename to export to. onPC exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
 --@tparam table export_data Table object to export.
 function gma.export(filename,export_data)
 end
 
 ---Export a table as a CSV file
 --
---@tparam string filename Filename to export to. Exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
+--@tparam string filename Filename to export to. onPC exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
 --@tparam table export_data Table object to export
 function gma.export_csv(filename,export_data)
 end
 
 ---Export a table as a JSON file
 --
---@tparam string filename Filename to export to. Exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
+--@tparam string filename Filename to export to. onPC exports to `\MA Lighting Technologies\grandma\gma2_V_<YourVersion>\temp`
 --@tparam table export_data Table object to export.
 function gma.export_json(filename,export_data)
 end
