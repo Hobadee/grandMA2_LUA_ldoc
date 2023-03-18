@@ -4,6 +4,8 @@ LDoc for the grandMA2 API, since their API is poorly documented.
 Compiled version at:
 http://static.impactsf.com/GrandMA2/
 
+Note, this version is hosted by a previous employer and may be out of date.  I have contacts there still so will try to have them keep it up-to-date, but please check the last updated time.
+
 
 ## Building
 
