@@ -32,21 +32,3 @@ end
 --@treturn string The object property.
 function gma.show.property.get(handle,property_name)
 end
-
----Sets an object property at a given index (by ID) for said handle
---
---@tparam number handle @{gma.show.getobj.handle}
---@tparam number index ???
---@tparam string value ???
---@treturn bool success ???
-function gma.show.property.set(handle,index,value)
-end
-
----Sets an object property at a given index (by name) for said handle
---
---@tparam number handle @{gma.show.getobj.handle}
---@tparam string property_name ???
---@tparam string value ???
---@treturn bool success ???
-function gma.show.property.set(handle,property_name,value)
-end
